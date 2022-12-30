@@ -8,15 +8,7 @@
     background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-
-
-// background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-//         url('../../images/hero/mobile-hero-1x.jpg');
-
-//     @include retina {
-//         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-//             url('../../images/hero/mobile-hero-2x.jpg');
-//     }
+       
 
 background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
 url(../../images/hero/mobile-hero-1x.jpg);
@@ -30,11 +22,11 @@ url(../../images/hero/mobile-hero-1x.jpg);
     
 @media screen and(min-width: 768px) {
 background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url('../../images/hero/tabl-hero-1x.jpg');
+        url("../../images/hero/tabl-hero-1x.jpg");
 
     @include retina {
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url('../../images/hero/tabl-hero-2x.jpg');
+            url("../../images/hero/tabl-hero-2x.jpg");
     }
 }
         @media screen and(min-width:1200px) {
