@@ -1,0 +1,56 @@
+.title {
+ text-align: center;
+    
+
+}
+
+.clients {
+    @extend %flex-align;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+
+}
+
+.clients__container {
+width: calc((100% - 30px)/2);
+height: 92px;
+   
+@media screen and (min-width:768px) {
+    width: calc((100% - 90px) /3);
+
+}
+@media screen and (min-width:1200px) {
+   
+    width: 170px;
+    height: 92px;
+    
+
+}
+
+}
+
+
+
+.clients__link {
+width: 100%;
+ height: 100%;
+ @extend %flex-align;
+
+ justify-content: center;
+ fill: #AFB1B8;
+ background-color: var(--primary-white-color);
+
+@extend %border-radius;
+ border: 1px solid #AFB1B8;
+transition: fill var(--animation),
+border-color var(--animation);
+
+&:hover,
+&:focus {
+fill: var(--accent-color);
+ border-color: var(--accent-color);
+        }
+
+}
+
