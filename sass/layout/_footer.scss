@@ -5,28 +5,52 @@
 }
 
 .footer-container {
-@media screen and (min-width:768px) {
+
+@include tablet {
+
     display: flex;
-    flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+
+// @media screen and (min-width:768px) {
+//     display: flex;
+//     flex-wrap: wrap;
     
 
-    } 
+//     } 
     
 
 }
 .footer-container-first{
     margin-bottom: 60px;
-@media screen and (min-width:768px) {
-    
-    margin-left: 76px;
+
+@include tablet {
+margin-left: 76px;
+
 }
-@media screen and (min-width:1200px) {
-    margin-left: 0px;
+
+
+// @media screen and (min-width:768px) {
+    
+//     margin-left: 76px;
+// }
+ @include desktop {
+margin-left: 0px;
     margin-bottom: 0px;
     min-width: 231px;
 
 
-}
+ }
+
+
+// @media screen and (min-width:1200px) {
+//     margin-left: 0px;
+//     margin-bottom: 0px;
+//     min-width: 231px;
+
+
+// }
 }
 
 
@@ -37,10 +61,19 @@
     &:last-child {
             margin-bottom: 0px;
         }
- @media screen and (min-width:1200px) {
-        
+
+@include desktop {
                     text-align: start;
-                }
+
+
+}
+
+
+
+//  @media screen and (min-width:1200px) {
+        
+//                     text-align: start;
+//                 }
 }
 
 
@@ -76,14 +109,35 @@
 /* Cоціальні іконки Футер */
 .container-footer-social{
     margin-bottom: 60px;
-@media screen and (min-width:768px) {
-        margin-bottom: 0px;
-        margin-left: 165px;
-    }
-@media screen and (min-width:1200px) {
+
+@include mobile {}
+
+    
+
+    @include desktop {}
+@include tablet {
+
+margin-bottom: 0px;
+    margin-left: 165px;
+
+
+}
+
+// @media screen and (min-width:768px) {
+//         margin-bottom: 0px;
+//         margin-left: 165px;
+//     }
+
+
+@include desktop {
+
+margin-left: 70px;
+
+}
+// @media screen and (min-width:1200px) {
             
-            margin-left: 70px;
-        }
+//             margin-left: 70px;
+//         }
 }
 
 .footer-social-title {
@@ -95,10 +149,18 @@
     line-height: 1.14;
     text-transform: uppercase;
     color: var(--primary-white-color);
-    @media screen and (min-width:1200px) {
+
+@include desktop {
+    text-align: start;
+        
+
+    }
+
+
+    // @media screen and (min-width:1200px) {
     
-            text-align: start;
-        }
+    //         text-align: start;
+    //     }
 }
 
 .footer-social {
@@ -131,14 +193,27 @@
     background: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     transition: background-color var(--animation);
-    @media screen and (min-width:1200px) {
-            &:hover,
-            &:focus {
-                    background-color: #2196F3;
-                    fill: var(--primary-white-color);
-                }
-    
+
+
+    @include desktop {
+
+    &:hover,
+        &:focus {
+            background-color: #2196F3;
+            fill: var(--primary-white-color);
         }
+}
+
+
+
+    // @media screen and (min-width:1200px) {
+    //         &:hover,
+    //         &:focus {
+    //                 background-color: #2196F3;
+    //                 fill: var(--primary-white-color);
+    //             }
+    
+    //     }
   
 
 
@@ -146,22 +221,38 @@
 .footer-container-form{
     margin-right: auto;
     margin-left: auto;
-    @media screen and (min-width:1200px) {
-    margin-left: 93px;
+
+@include desktop {
+margin-left: 93px;
     margin-right: 0px;
-        }
+       
+    }
+
+
+    // @media screen and (min-width:1200px) {
+    // margin-left: 93px;
+    // margin-right: 0px;
+    //     }
 }
 
 
 .footer-form {
     width: auto;
-   
-    @media screen and (min-width:1200px) {
-           
+
+
+    @include desktop {
             width: 570px;
-            height: 86px;
-            margin-left: auto;
+                height: 86px;
+                margin-left: auto;
+    
         }
+   
+    // @media screen and (min-width:1200px) {
+           
+    //         width: 570px;
+    //         height: 86px;
+    //         margin-left: auto;
+    //     }
 
 }
 
@@ -169,12 +260,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    @media screen and (min-width:1200px) {
+    // @media screen and (min-width:1200px) {
+    //         display: flex;
+    //         flex-direction: row;
+    //         align-items: baseline;
+    //     }
+        @include desktop {
             display: flex;
-            flex-direction: row;
-            align-items: baseline;
-        }
+                flex-direction: row;
+                align-items: baseline;
     
+        }
 
 }
 
@@ -185,10 +281,14 @@
     line-height: 1.14;
     text-transform: uppercase;
     color: var(--primary-white-color);
-    @media screen and (min-width:1200px) {
+    // @media screen and (min-width:1200px) {
     
-            text-align: start;
-        }
+    //         text-align: start;
+    //     }
+                @include desktop {
+                    text-align: start;
+        
+                }
 }
 
 
@@ -221,10 +321,13 @@
             color: rgba(255, 255, 255, 0.6);
     
         }
-@media screen and (min-width:768px) {
-   width: 450px;
-}
+// @media screen and (min-width:768px) {
+//    width: 450px;
+// }
+  @include tablet {
+    width: 450px;
 
+  }
 
 }
 
@@ -244,7 +347,7 @@
     height: 50px;
     background: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    // border-radius: 4px;
+    
     @extend %border-radius;
     border: 1px solid transparent;
     cursor: pointer;
@@ -256,10 +359,15 @@
     letter-spacing: 0.06em;
 
     color: var(--primary-white-color);
-    @media screen and (min-width:1200px) {
-            margin-left: 12px ;
+    // @media screen and (min-width:1200px) {
+    //         margin-left: 12px ;
     
-        }
+    //     }
+
+                @include desktop {
+                    margin-left: 12px;
+        
+                }
 
 
 

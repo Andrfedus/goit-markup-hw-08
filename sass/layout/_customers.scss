@@ -1,6 +1,8 @@
 .title {
  text-align: center;
-    
+
+
+
 
 }
 
@@ -15,18 +17,35 @@
 .clients__container {
 width: calc((100% - 30px)/2);
 height: 92px;
-   
-@media screen and (min-width:768px) {
-    width: calc((100% - 90px) /3);
+
+
+@include tablet {
+width: calc((100% - 90px) /3);
 
 }
-@media screen and (min-width:1200px) {
-   
-    width: 170px;
+
+
+// @media screen and (min-width:768px) {
+//     width: calc((100% - 90px) /3);
+
+// }
+@include desktop {
+
+width: 170px;
     height: 92px;
+
+}
+
+
+
+
+// @media screen and (min-width:1200px) {
+   
+//     width: 170px;
+//     height: 92px;
     
 
-}
+// }
 
 }
 
