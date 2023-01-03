@@ -34,14 +34,15 @@
                 </button>
                 <div class="mobile-menu" id="mobile-menu" data-menu>
                 <ul class="mobile-menu__nav">
-                    <li class="site-title"> <a href="./index.html" class="link link--active mobile-menu__link">Студія</a> </li>
-                    <li class="site-title"> <a href="./portfolio.html" class="link mobile-menu__link">Портфоліо</a> </li>
-                    <li class="site-title"> <a href="" class="link mobile-menu__link">Контакти</a> </li>
+                    <li class="site-title mobile-menu__title"> <a href="./index.html" class="link link--active mobile-menu__link">Студія</a> </li>
+                    <li class="site-title mobile-menu__title"> <a href="./portfolio.html" class="link mobile-menu__link">Портфоліо</a> </li>
+                    <li class="site-title mobile-menu__title"> <a href="" class="link mobile-menu__link">Контакти</a> </li>
                    
                 </ul>
+                <div>
                 <ul class="mobile-menu_contacs">
                 <li class="site-title">
-                    <a class="link link__contacts link__tel" href="tel:+380961111111">
+                    <a class=" link__tel" href="tel:+380961111111">
                 
                         +38 096 111 11 11</a>
                 </li>
@@ -62,6 +63,7 @@
                    
                     <li><a class="mobile-menu-social__link" href="#">LinkedIn</a></li>
                 </ul>
+                </div>
                
                    
                 </div>
@@ -153,15 +155,32 @@
             
             <ul class="work-images">
                 
-                <li class="work-images__container"><img src="./images/box1.jpg" alt="Декстоп" width="370" >
+                <li class="work-images__container">
+                   <picture>
+                    <source srcset="./images/decs-box/box-decs-addition-1x.jpg 1x, ./images/decs-box/box-decs-addition-2x.jpg 2x"
+                        media="(min-width:1200px)" />
+                        <img src="./images/decs-box/box-decs-addition-1x.jpg" alt="Декстоп" width="370">
+                   </picture> 
+                    
+                    
                 <h3 class="work-images__tittle" >Десктопні додатки</h3></li>
                 
                 <li class="work-images__container">
-                <img src="./images/box2.jpg" alt="Мобільний додаток" width="370">
+                    <picture>
+                        <source srcset="./images/decs-box/box-mob-addition-1x.jpg 1x, ./images/decs-box/box-mob-addition-2x.jpg 2x"
+                            media="(min-width:1200px)" />
+                        <img src="./images/decs-box/box-mob-addition-1x.jpg" alt="Мобільний додаток" width="370">
+                    </picture>
+                
                  <h3 class="work-images__tittle">Мобільні додатки</h3>   
                 </li>
                 <li class="work-images__container">
-                    <img src="./images/box3.jpg" alt="Планшет"   width="370">
+                    <picture>
+                        <source srcset="./images/decs-box/box-design-solitions-1x.jpg 1x, ./images/decs-box/box-design-solitions-2x.jpg 2x"
+                            media="(min-width:1200px)" />
+                        <img src="./images/decs-box/box-design-solitions-1x.jpg" alt="Планшет" width="370">
+                    </picture>
+                    
                     <h3 class="work-images__tittle">Дизайнерські рішення</h3>
                 </li>
             </ul>
@@ -175,7 +194,7 @@
     <picture>
         <source srcset="./images/decs-team/decs-igor-demjanenko-1x.jpg 1x, ./images/decs-team/decs-igor-demjanenko-2x.jpg 2x" media="(min-width:1200px)" />
         <source srcset="./images/tablet-team/tabl-igor-demjanenko-1x.jpg 1x, ./images/tablet-team/tabl-igor-demjanenko-2x.jpg  2x" media="(min-width:768px)" />
-        <source srcset="./images/mobile-team/mob-igor-demjanenko-1x.jpg 1x, ./images/mobile-team/mob-igor-demjanenko-2x.jpg  2x" media="(min-width:480px)" />
+        <source srcset="./images/mobile-team/mob-igor-demjanenko-1x.jpg 1x, ./images/mobile-team/mob-igor-demjanenko-2x.jpg  2x" media="(max-width:767px)" />
         <img srcset="./images/decs-team/decs-igor-demjanenko-1x.jpg 1x, ./images/decs-team/decs-igor-demjanenko-2x.jpg 2x " src="./images/decs-team/decs-igor-demjanenko-1x.jpg" alt="Ігор Дем'яненко"
             width="270" />
     </picture>
@@ -224,7 +243,7 @@
                             media="(min-width:768px)" />
                         <source
                             srcset="./images/mobile-team/mob-olga-repina-1x.jpg 1x, ./images/mobile-team/mob-olga-repina-2x.jpg  2x"
-                            media="(min-width:480px)" />
+                            media="(max-width:767px)" />
                         <img srcset="./images/decs-team/decs-olga-repina-1x.jpg 1x, ./images/decs-team/decs-olga-repina-2x.jpg 2x "
                             src="./images/decs-team/decs-olga-repina-1x.jpg" alt="Ольга Рєпіна" width="270" />
                     </picture>
@@ -271,7 +290,7 @@
                         <source srcset="./images/tablet-team/tabl-mykola-tarasov-1x.jpg 1x, ./images/tablet-team/tabl-mykola-tarasov-2x.jpg  2x"
                             media="(min-width:768px)" />
                         <source srcset="./images/mobile-team/mob-mykola-tarasov-1x.jpg 1x, ./images/mobile-team/mob-mykola-tarasov-2x.jpg  2x"
-                            media="(min-width:480px)" />
+                            media="(max-width:767px)" />
                         <img srcset="./images/decs-team/decs-mukola-tarasov-1x.jpg 1x, ./images/decs-team/decs-mukola-tarasov-2x.jpg 2x "
                             src="./images/decs-team/decs-mukola-tarasov-1x.jpg" alt="Микола Тарасов" width="270" />
                     </picture>
@@ -320,7 +339,7 @@
                             media="(min-width:768px)" />
                         <source
                             srcset="./images/mobile-team/mob-mychailo-jermakov-1x.jpg 1x, ./images/mobile-team/mob-mychailo-jermakov-2x.jpg  2x"
-                            media="(min-width:480px)" />
+                            media="(max-width:767px)" />
                         <img srcset="./images/decs-team/decs-michajlo-jermakov-1x.jpg 1x, ./images/decs-team/decs-michajlo-jermakov-2x.jpg 2x "
                             src="./images/decs-team/decs-michajlo-jermakov-1x.jpg" alt="Микола Тарасов" width="270" />
                     </picture>
