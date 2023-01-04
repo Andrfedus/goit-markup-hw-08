@@ -150,11 +150,26 @@
     
     @extend %flex-align;
     flex-wrap: wrap;
-    font-size: 12px;
+    font-size: 10px;
     line-height: 1.17;
 
     letter-spacing: 0.03em;
     color: var(--title-text-color);
+    @media screen and (max-width:400px) {
+            font-size: 7px;
+    
+        }
+                 @include tablet {
+        
+                     font-size: 12px;
+                     
+                 }
+    
+    @include desktop {
+            
+    font-size: 14px;
+        line-height: 1.71;
+        }
 
     &::before {
         content: "";
