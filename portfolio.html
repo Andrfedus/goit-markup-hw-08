@@ -23,8 +23,8 @@
                         class="logo__studio">Studio</span></a>
                 <ul class="site-nav">
                     <li class="site-title site-nav__title"> <a href="./index.html"
-                            class=" link link__item link--active">Студія</a> </li>
-                    <li class="site-title site-nav__title"> <a href="./portfolio.html" class="link link__item">Портфоліо</a>
+                            class=" link link__item ">Студія</a> </li>
+                    <li class="site-title site-nav__title"> <a href="./portfolio.html" class="link link__item link--active">Портфоліо</a>
                     </li>
                     <li class="site-title site-nav__title"> <a href="" class="link link__item">Контакти</a> </li>
                 </ul>
@@ -118,18 +118,39 @@
             <ul class="container-works">
                 <li class="works">
                     <div class="image-thumb">
-                    <img src="./images/texnokrjak.jpg" alt="Сайт Технокряк" width="370" height="294">
+                        <picture>
+                            <source
+                                srcset="./images/texnokrjak.jpg 1x, ./images/texnokrjak.jpg 2x"
+                                media="(min-width:1200px)" />
+                            <source
+                                srcset="./images/tablet-portfolio/tabl-technokrjak-1x.jpg 1x, ./images/tablet-portfolio/tabl-technokrjak-2x.jpg 2x"
+                                media="(min-width:768px)" />
+                            <source srcset="./images/mobile-portfolio/mobile-texnokrjak-1x.jpg 1x, ./images/mobile-portfolio/mobile-texnokrjak-2x.jpg 2x"
+                                media="(max-width:767px)" />
+                            <img src="./images/texnokrjak.jpg" alt="Сайт Технокряк" width="370" height="294">
+                        </picture>
+                    
                     <p class="image-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                     вичерпні відомості про компанію чи приватну особу.</p>
                     </div>
-                    <div class="container-text">
+                    <div class="container-text container-text__tablet">
                     <h2 class="works__title" >Технокряк</h2>
                     <p class="works__text">Веб-сайт</p>
                     </div>
                 </li>
                 <li class="works"> 
                     <div class="image-thumb">
-                    <img src="./images/poster.new.orlean.jpg" alt="Дизайн Постер New Orlean vs Golden Star" width="370" height="294">
+                        <picture>
+                            <source srcset="./images/poster.new.orlean.jpg 1x, ./images/poster.new.orlean.jpg 2x" media="(min-width:1200px)" />
+                            <source
+                                srcset="./images/tablet-portfolio/tabl-poster-1x.jpg 1x, ./images/tablet-portfolio/tabl-poster-2x.jpg 2x"
+                                media="(min-width:768px)" />
+                            <source
+                                srcset="./images/mobile-portfolio/mobile-poster-1x.jpg 1x, ./images/mobile-portfolio/mobile-poster-2x.jpg 2x"
+                                media="(max-width:767px)" />
+                        <img src="./images/poster.new.orlean.jpg" alt="Дизайн Постер New Orlean vs Golden Star" width="370" height="294">
+                        </picture>
+                    
                     <p class="image-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
                         відвідувачу отримати
                         вичерпні відомості про компанію чи приватну особу.</p>
@@ -141,7 +162,16 @@
                 </li>
                 <li class="works">
                     <div class="image-thumb">
-                    <img src="./images/restorant.seafood.jpg" alt="Додаток Ресторан Seafood" width="370" height="294">
+                        <picture>
+                            <source srcset="./images/restorant.seafood.jpg 1x, ./images/restorant.seafood.jpg 2x" media="(min-width:1200px)" />
+                            <source srcset="./images/tablet-portfolio/tabl-restorant-seafood-1x.jpg 1x, ./images/tablet-portfolio/tabl-restorant-seafood-2x.jpg 2x"
+                                media="(min-width:768px)" />
+                            <source
+                                srcset="./images/mobile-portfolio/mobile-restoran-seafood-1x.jpg 1x, ./images/mobile-portfolio/mobile-restoran-seafood-2x.jpg 2x"
+                                media="(max-width:767px)" />
+                            <img src="./images/restorant.seafood.jpg" alt="Додаток Ресторан Seafood" width="370" height="294">
+                        </picture>
+                    
                     <p class="image-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
                         відвідувачу отримати
                         вичерпні відомості про компанію чи приватну особу.</p>
@@ -153,7 +183,17 @@
                 </li>
                 <li class="works">
                     <div class="image-thumb">
-                    <img src="./images/proekt.prime.jpg" alt=" Маркетинг Проєкт Prime" width="370" height="294">
+                            <picture>
+                                <source srcset="./images/proekt.prime.jpg 1x, ./images/proekt.prime.jpg 2x" media="(min-width:1200px)" />
+                                <source
+                                    srcset="./images/tablet-portfolio/tabl-proekt-prime-1x.jpg 1x, ./images/tablet-portfolio/tabl-proekt-prime-2x.jpg 2x"
+                                    media="(min-width:768px)" />
+                                <source
+                                    srcset="./images/mobile-portfolio/mobile-proect-prime-1x.jpg 1x, ./images/mobile-portfolio/mobile-proect-prime-2x.jpg 2x"
+                                    media="(max-width:767px)" />
+                                <img src="./images/proekt.prime.jpg" alt=" Маркетинг Проєкт Prime" width="370" height="294">
+                            </picture>
+                    
                     <p class="image-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
                         відвідувачу отримати
                         вичерпні відомості про компанію чи приватну особу.</p>
@@ -165,7 +205,17 @@
                 </li>
                 <li class="works">
                     <div class="image-thumb">
-                    <img src="./images/proekt.boxes.jpg" alt="Додаток Проєкт Boxes" width="370" height="294">
+                        <picture>
+                            <source srcset="./images/proekt.boxes.jpg 1x, ./images/proekt.boxes.jpg 2x" media="(min-width:1200px)" />
+                            <source
+                                srcset="./images/tablet-portfolio/tabl-proekt-boxes-1x.jpg 1x, ./images/tablet-portfolio/tabl-proekt-boxes-2x.jpg 2x"
+                                media="(min-width:768px)" />
+                            <source
+                                srcset="./images/mobile-portfolio/mobile-proect-boxes-1x.jpg 1x, ./images/mobile-portfolio/mobile-proect-boxes-2x.jpg 2x"
+                                media="(max-width:767px)" />
+                            <img src="./images/proekt.boxes.jpg" alt="Додаток Проєкт Boxes" width="370" height="294">
+                        </picture>
+                    
                     <p class="image-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
                         відвідувачу отримати
                         вичерпні відомості про компанію чи приватну особу.</p>
@@ -177,7 +227,17 @@
                 </li>
                 <li class="works">
                     <div class="image-thumb">
-                    <img src="./images/inspiration.gas.jpg" alt="Веб-сайт Inspiration has no Borders" width="370" height="294">
+                        <picture>
+                            <source srcset="./images/inspiration.gas.jpg 1x, ./images/inspiration.gas.jpg 2x" media="(min-width:1200px)" />
+                            <source
+                                srcset="./images/tablet-portfolio/tabl-has-no-borders-1x.jpg 1x, ./images/tablet-portfolio/tabl-has-no-borders-2x.jpg 2x"
+                                media="(min-width:768px)" />
+                            <source
+                                srcset="./images/mobile-portfolio/mobile-has-no-borders-1x.jpg 1x, ./images/mobile-portfolio/mobile-has-no-borders-2x.jpg 2x"
+                                media="(max-width:767px)" />
+                        <img src="./images/inspiration.gas.jpg" alt="Веб-сайт Inspiration has no Borders" width="370" height="294">
+                        </picture>
+                    
                     <p class="image-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
                         відвідувачу отримати
                         вичерпні відомості про компанію чи приватну особу.</p>
@@ -189,7 +249,17 @@
                 </li>
                 <li class="works">
                     <div class="image-thumb">
-                    <img src="./images/vidanjia.limited.jpg" alt="Дизайн Видання Limited Edition" width="370" height="294">
+                        <picture>
+                            <source srcset="./images/vidanjia.limited.jpg 1x, ./images/vidanjia.limited.jpg 2x" media="(min-width:1200px)" />
+                            <source
+                                srcset="./images/tablet-portfolio/tabl-limited-edition-1x.jpg 1x, ./images/tablet-portfolio/tabl-limited-edition-2x.jpg 2x"
+                                media="(min-width:768px)" />
+                            <source
+                                srcset="./images/mobile-portfolio/mobile-limited-edition-1x.jpg 1x, ./images/mobile-portfoli/mobile-limited-edition-2x.jpg 2x"
+                                media="(max-width:767px)" />
+                        <img src="./images/vidanjia.limited.jpg" alt="Дизайн Видання Limited Edition" width="370" height="294">
+                        </picture>
+                    
                     <p class="image-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
                     відвідувачу отримати
                     вичерпні відомості про компанію чи приватну особу.</p>
@@ -201,7 +271,17 @@
                 </li>
                 <li class="works">
                     <div class="image-thumb">
-                    <img src="./images/proekt.lab.jpg" alt="Маркетинг Проєкт LAB" width="370" height="294">
+                        <picture>
+                            <source srcset="/images/proekt.lab.jpg 1x, ./images/proekt.lab.jpg 2x" media="(min-width:1200px)" />
+                            <source
+                                srcset="./images/tablet-portfolio/tabl-proekt-lab-1x.jpg 1x, ./images/tablet-portfolio/tabl--proekt-lab-1x.jpg 2x"
+                                media="(min-width:768px)" />
+                            <source
+                                srcset="./images/mobile-portfolio/mobile-proect-lab-1x.jpg 1x, ./images/mobile-portfoli/mobile-proect-lab-2x.jpg 2x"
+                                media="(max-width:767px)" />
+                            <img src="./images/proekt.lab.jpg" alt="Маркетинг Проєкт LAB" width="370" height="294">
+                        </picture>
+                   
                     <p class="image-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
                         відвідувачу отримати
                         вичерпні відомості про компанію чи приватну особу.</p>
@@ -213,7 +293,17 @@
                 </li>
                 <li class="works">
                     <div class="image-thumb">
-                    <img src="./images/growing.business.jpg" alt="Додаток Growing Business" width="370" height="294">
+                        <picture>
+                            <source srcset="./images/growing.business.jpg 1x, ./images/proekt.lab.jpg 2x" media="(min-width:1200px)" />
+                            <source
+                                srcset="./images/tablet-portfolio/tabl-growing-1x.jpg 1x, ./images/tablet-portfolio/tabl-growing-2x.jpg 2x"
+                                media="(min-width:768px)" />
+                            <source
+                                srcset="./images/mobile-portfolio/mobile-growing-1x.jpg 1x, ./images/mobile-portfoli/mobile-growing-2x.jpg 2x"
+                                media="(max-width:767px)" />
+                            <img src="./images/growing.business.jpg" alt="Додаток Growing Business" width="370" height="294">
+                        </picture>
+                    
                     <p class="image-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
                         відвідувачу отримати
                         вичерпні відомості про компанію чи приватну особу.</p>
